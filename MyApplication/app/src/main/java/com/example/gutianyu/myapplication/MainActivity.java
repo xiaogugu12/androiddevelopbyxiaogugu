@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"You  clicked  Button 1",Toast.LENGTH_SHORT).show();
+                //如果把这里面的内容改为finish();此时就是销毁活动
             }
         });
     }
