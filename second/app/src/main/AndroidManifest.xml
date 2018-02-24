@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gutianyu.myapplication">
+    package="com.example.gutianyu.myapplication" >
 
     <application
         android:allowBackup="true"
@@ -8,15 +8,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".FirstActivity"
-            android:label="This  is  FirstActivity">
-            <!--名字为菜单上的名字-->
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".FirstActivity"
+            android:label="This  is  FirstActivity" >
+
+            <!-- 名字为菜单上的名字 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <!--定义FirstActivity为主活动-->
+            <!-- 定义FirstActivity为主活动 -->
+        </activity>
+        <activity android:name="com.example.gutianyu.Main2Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
+
 </manifest>
