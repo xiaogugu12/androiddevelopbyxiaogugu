@@ -12,15 +12,24 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".SecondActivity">
             <intent-filter>
-                <action  android:name="com.example.activitytest.ACTION_START"/>
-                <category  android:name="android.intent.category.DEFAULT"/>
-                <!--没有下面这一行程序无法启动，因为程序无法响应category-->
-                <category  android:name="com.example.activitytest.MY_CATEGORY"/>
+                <action android:name="com.example.activitytest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 没有下面这一行程序无法启动，因为程序无法响应category -->
+                <category android:name="com.example.activitytest.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.gutianyu.otherinvisibleactivity.Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
