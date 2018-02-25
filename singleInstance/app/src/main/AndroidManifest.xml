@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gutianyu.singleinstance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!--少了这两句可能不会为主活动-->
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action  android:name="com.example.gutianyu.ACTION_START"/>
+                <category  android:name="android.intent.category.DEFAULT"/>
+                <category  android:name="com.example.gutianyu.MY_CATEGORY"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity"></activity>
+    </application>
+
+</manifest>
