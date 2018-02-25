@@ -1,4 +1,4 @@
-package com.example.gutianyu.defaultactivity;
+package com.example.gutianyu.sendmessagetoupper;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.gutianyu.defaultactivity", appContext.getPackageName());
+        assertEquals("com.example.gutianyu.sendmessagetoupper", appContext.getPackageName());
     }
 }

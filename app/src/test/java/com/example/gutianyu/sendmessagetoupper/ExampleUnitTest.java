@@ -1,4 +1,4 @@
-package com.example.gutianyu.otherinvisibleactivity;
+package com.example.gutianyu.sendmessagetoupper;
 
 import org.junit.Test;
 
