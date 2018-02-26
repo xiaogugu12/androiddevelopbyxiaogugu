@@ -1,5 +1,7 @@
-package com.example.gutianyu.uielementary;
+package com.example.gutianyu.uialertdialog;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,10 +29,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         switch (v.getId()){
             case R.id.button:
-                int  progress=progressBar.getProgress();
-                progress=progress+10;
-                progressBar.setProgress(progress);
+                AlertDialog.Builder  dialog=new AlertDialog.Builder(MainActivity.this);
+                dialog.setTitle("This  is  Dialog");
+                dialog.setMessage("Something  important.");
+                dialog.setCancelable(false);
+                dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
+                    }
+                });//点击ok会发生的事件
+                dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });//点击cancel会发生的事件
+                dialog.show();
                 break;
             default:
                 break;
