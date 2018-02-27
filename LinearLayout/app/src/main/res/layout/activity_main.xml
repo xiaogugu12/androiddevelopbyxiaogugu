@@ -20,6 +20,7 @@
         android:text="Send"/>
     <!--系统会把LinearLayout下的所有控件指定的layout_weight值相加
     然后每个控件所占大小的比例就是用该控件的layout_weight值除以刚才总值-->
+
     <!--android:gravity用于指定文字在控件中的对齐方式
     android:layout_gravity用于指定控件在布局中的对齐方式-->
 </LinearLayout>
