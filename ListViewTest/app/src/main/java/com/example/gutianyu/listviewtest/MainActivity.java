@@ -22,5 +22,6 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         //最后调用ListView中的setAdapter将构造好的
         //适配器对象传递过去
+
     }
 }
