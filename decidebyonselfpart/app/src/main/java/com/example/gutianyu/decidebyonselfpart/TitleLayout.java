@@ -15,7 +15,8 @@ import java.util.jar.Attributes;
  * Created by gutianyu on 2018/2/27.
  */
 
-public class TitleLayout  extends LinearLayout {
+public class TitleLayout  extends Li
+        nearLayout {
     public   TitleLayout(Context context, Attributes  attrs)
     {
         super(context, (AttributeSet) attrs);
